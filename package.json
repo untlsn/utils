@@ -1,0 +1,25 @@
+{
+  "name": "@un-tlsn/utils",
+  "version": "0.0.0",
+  "description": "A pack of commonly used utils",
+  "type": "module",
+  "main": "dist/index.js",
+  "module": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsup",
+    "dev": "tsup --watch",
+    "pub": "tsup && npm publish --access public"
+  },
+  "keywords": [
+    "utils",
+    "typescript"
+  ],
+  "author": "untlsn",
+  "license": "MIT",
+  "devDependencies": {
+    "typescript": "^5.5.2",
+    "tsup": "^8.1.0",
+    "@un-tlsn/eslint": "^0.1.0"
+  }
+}

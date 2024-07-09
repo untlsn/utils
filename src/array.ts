@@ -37,3 +37,20 @@ export function asArray<T>(value: T): T extends any[] ? T : [T];
 export function asArray<T>(value: MaybeArray<T>): T[] {
 	return Array.isArray(value) ? value : [value];
 }
+
+/**
+ * Give random value from array
+ * @param arr
+ *
+ * @example
+ * const arr = [1, 2, 3, 4, 5];
+ *
+ * getRandomValueFromArray(arr) // |> 3
+ * getRandomValueFromArray(arr) // |> 2
+ * getRandomValueFromArray(arr) // |> 3
+ * getRandomValueFromArray(arr) // |> 4
+ */
+export function getRandomValueFromArray<T>(arr: T[]): T {
+	const index = Math.floor(Math.random() * arr.length);
+	return arr[index];
+}

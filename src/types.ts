@@ -42,3 +42,8 @@ export type PathValue<TObject, TPath extends string> = TPath extends keyof NonNu
 			? PathValue<TObject[K], TRest>
 			: never
 		: never;
+
+// Function that return value T
+export type Accessor<T> = () => T;
+// Function that return value T or value T itself
+export type MaybeAccessor<T> = T | Accessor<T>;

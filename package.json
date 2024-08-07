@@ -1,18 +1,8 @@
 {
-  "name": "@un-tlsn/utils",
-  "version": "0.0.1",
-  "description": "A pack of commonly used utils",
-  "type": "module",
-  "main": "dist/index.js",
-  "module": "dist/index.js",
-  "types": "dist/index.d.ts",
+  "name": "@untlsn/utils",
   "scripts": {
     "pub": "jsr publish"
   },
-  "keywords": [
-    "utils",
-    "typescript"
-  ],
   "author": "untlsn",
   "license": "MIT",
   "devDependencies": {

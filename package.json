@@ -7,9 +7,7 @@
   "module": "dist/index.js",
   "types": "dist/index.d.ts",
   "scripts": {
-    "build": "tsup",
-    "dev": "tsup --watch",
-    "pub": "tsup && bunx jsr publish"
+    "pub": "jsr publish"
   },
   "keywords": [
     "utils",
@@ -20,7 +18,6 @@
   "devDependencies": {
     "jsr": "^0.13.1",
     "typescript": "^5.5.2",
-    "tsup": "^8.1.0",
     "@un-tlsn/eslint": "^0.1.0"
   }
 }
